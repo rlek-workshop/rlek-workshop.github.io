@@ -1,5 +1,6 @@
 #root {
   /*max-width: 1280px;*/
+  width: 100vw;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -51,7 +52,6 @@ Banner
   /*background-image: url('pexels-tara-winstead-8386440.jpg');
   background-size: cover;
   background-position: center;*/
-  width: 100vw;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -95,6 +95,43 @@ Navbar
   margin: 2rem;
 }
 
+/*
+About & Call for papers
+*/
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p{
+  width: clamp(200px, 80vw, 1000px);
+  text-align: justify;
+}
+
+.about p br {
+  display: block;
+  margin-top: 1em;  /* Adjust as needed */
+  content: "";
+}
+
+.call-for-papers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-for-papers p{
+  width: clamp(200px, 80vw, 1000px);
+  text-align: justify;
+}
+
+.about p br {
+  display: block;
+  margin-top: 1em;  /* Adjust as needed */
+  content: "";
+}
+
 
 /*
 Speakers
@@ -109,7 +146,7 @@ Speakers
 .invited-speakers .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   gap: 3rem;
 }
 
@@ -117,10 +154,17 @@ Speakers
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: clamp(15px, 25vw, 200px);
+  font-size: 1rem;
+}
+
+.speaker .name a{
+  color: #000;
+  font-weight:500;
 }
 
 .speaker img {
-  height: 150px;
+  height: clamp(10px,22vw,150px);/*150px;*/
   margin-bottom: 0.5rem;
 }
 
@@ -167,10 +211,16 @@ Organizers
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: clamp(15px, 20vw, 200px);/*200px;*/
+  font-size: 1rem;
 }
 
 .organizer img {
-  height: 150px;
+  height: clamp(12px, 18vw, 150px);/*150px;*/
   margin-bottom: 0.5rem;
+}
+
+.organizer .name a{
+  color: #000;
+  font-weight:500;
 }
