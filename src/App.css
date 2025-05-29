@@ -126,7 +126,7 @@ About & Call for papers
   text-align: justify;
 }
 
-.about p br {
+.call-for-papers p br {
   display: block;
   margin-top: 1em;  /* Adjust as needed */
   content: "";

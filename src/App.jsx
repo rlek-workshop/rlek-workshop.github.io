@@ -44,9 +44,9 @@ These challenges include (1) effectively leveraging external knowledge for decis
           Relevant topics include, but are not limited to:
           <ul>
             <li><b>Algorithm design for RL with external knowledge:</b>
-              Novel RL algorithms that effectively integrate external knowledge sources to enhance efficiency, safety, generalizability, transferability, and interpretability. Example topics include RL with foundation models [1, 2, 3, 4, 5, 6], offline RL [7, 8, 9, 10, 11], program-guided RL [12, 13, 14, 15, 16], knowledge-grounded RL [17, 18, 19], reincarnating RL [20, 21], safe RL [22, 23, 24, 25, 26], and explainable RL [27, 28, 29].</li>
+              Novel RL algorithms that effectively integrate external knowledge sources to enhance efficiency, safety, generalizability, transferability, and interpretability. Example topics include RL with foundation models, offline RL, program-guided RL, knowledge-grounded RL, reincarnating RL, safe RL, and explainable RL.</li>
             <li><b>Knowledge transfer in RL:</b>
-              Methods for transferring learned skills and knowledge representations across different tasks, environments, and domains to reduce learning time in new RL scenarios. Example topics include meta-RL [30, 31, 32, 33, 34], multi-task RL [35, 36, 37, 38, 39], lifelong and continual RL [40, 41, 42, 43, 44], incremental RL [45, 46, 47, 48, 49], and hierarchical RL [50, 51, 52, 53, 54].</li>
+              Methods for transferring learned skills and knowledge representations across different tasks, environments, and domains to reduce learning time in new RL scenarios. Example topics include meta-RL, multi-task RL, lifelong and continual RL, incremental RL, and hierarchical RL.</li>
             <li><b>RL for foundation models:</b>
               RL techniques for training, fine-tuning, and aligning foundation models to improve their reasoning abilities, reduce harmful outputs, and enhance their alignment with human preferences and values.</li>
             <li><b>Applications of RL with external knowledge:</b>
