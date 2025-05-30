@@ -43,13 +43,13 @@ These challenges include (1) effectively leveraging external knowledge for decis
           <br/>
           Relevant topics include, but are not limited to:
           <ul>
-            <li><b>Algorithm design for RL with external knowledge:</b>
+            <li><b>Algorithm design for RL with external knowledge: </b>
               Novel RL algorithms that effectively integrate external knowledge sources to enhance efficiency, safety, generalizability, transferability, and interpretability. Example topics include RL with foundation models, offline RL, program-guided RL, knowledge-grounded RL, reincarnating RL, safe RL, and explainable RL.</li>
-            <li><b>Knowledge transfer in RL:</b>
+            <li><b>Knowledge transfer in RL: </b>
               Methods for transferring learned skills and knowledge representations across different tasks, environments, and domains to reduce learning time in new RL scenarios. Example topics include meta-RL, multi-task RL, lifelong and continual RL, incremental RL, and hierarchical RL.</li>
-            <li><b>RL for foundation models:</b>
+            <li><b>RL for foundation models: </b>
               RL techniques for training, fine-tuning, and aligning foundation models to improve their reasoning abilities, reduce harmful outputs, and enhance their alignment with human preferences and values.</li>
-            <li><b>Applications of RL with external knowledge:</b>
+            <li><b>Applications of RL with external knowledge: </b>
               Real-world applications demonstrating how external knowledge integration enhances RL performance across domains such as robotics, autonomous systems, healthcare, and finance.</li>
           </ul>
         </p>
@@ -194,7 +194,7 @@ These challenges include (1) effectively leveraging external knowledge for decis
             <div className="institute">Orchat AI</div>
           </div>
           <div className="organizer">
-            <img src="https://shaohua0116.github.io/images/profile.jpg" />
+            <img src="organizer_shao-hua-sun.jpg" />
             <div className="name"><a href="https://shaohua0116.github.io">Shao-Hua Sun</a></div>
             <div className="institute">National Taiwan<br/>University</div>
           </div>
@@ -208,7 +208,7 @@ These challenges include (1) effectively leveraging external knowledge for decis
           <div className="organizer">
             <img src="https://ymy4323460.github.io/assets/img/IMG_1201.JPG" />
             <div className="name"><a href="https://ymy4323460.github.io">Mengyue Yang</a></div>
-            <div className="institute">University of Bistro</div>
+            <div className="institute">University of Bristol</div>
           </div>
           <div className="organizer">
             <img src="https://aravindr93.github.io/assets/dp2023.jpeg" />

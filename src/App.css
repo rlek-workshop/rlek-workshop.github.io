@@ -107,6 +107,7 @@ About & Call for papers
 .about p{
   width: clamp(200px, 80vw, 1000px);
   text-align: justify;
+  hyphens: auto; 
 }
 
 .about p br {
@@ -124,6 +125,7 @@ About & Call for papers
 .call-for-papers p{
   width: clamp(200px, 80vw, 1000px);
   text-align: justify;
+  hyphens: auto; 
 }
 
 .call-for-papers p br {
