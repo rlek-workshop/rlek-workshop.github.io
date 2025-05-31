@@ -11,7 +11,7 @@ function App() {
 
       <div className="banner">
         {/*<img src="pexels-tara-winstead-8386440.jpg" alt="Photo by Tara Winstead: https://www.pexels.com/photo/robot-pointing-on-a-wall-8386440/"/>*/}
-        <h1>Reinforcement Learning with External Knowledge Base</h1>
+        <h1>Reinforcement Learning with External Knowledge Bases</h1>
         <h3>Workshop proposal for NeurIPS 2025</h3>
         <h3>Date: TBD  | Location: TBD</h3>
       </div>
@@ -23,15 +23,22 @@ function App() {
       <div className="about">
         <h2>About</h2>
         <p>
-          Reinforcement learning (RL) has been widely deployed to address complex tasks where the underlying dynamics of the environment are difficult to model explicitly.
-However, RL's fundamental trial-and-error learning process presents significant challenges in terms of sample efficiency, safety, generalizability, knowledge transferability, and interpretability. RL can require a large amount of interaction data to learn effective policies, making them sample inefficient and impractical for domains where data collection is costly or risky. RL agents can also take undesirable actions during exploration, raising safety concerns in real-world applications where mistakes can have serious consequences. In addition, generalizing behaviors to and transferring knowledge across unseen tasks remains challenging, as RL agents may overfit to specific training conditions and require learning from scratch in new environments. Improving these aspects of RL is not straightforward, as the complexity of the algorithms and the black-box nature of the models used in training make it difficult to interpret agent decisions and diagnose failures.
+          Reinforcement learning (RL) has been widely deployed for complex tasks where environmental dynamics are difficult to model explicitly. 
+          However, the trial-and-error nature of RL presents significant challenges.
+          RL often requires extensive interaction data, limiting use in domains where interaction is costly, and may raise safety concerns when undesirable actions are taken during exploration. 
+          Lastly, generalizing and transferring knowledge across unseen tasks remains challenging, as agents may overfit to specific training conditions.
+          These aspects are difficult to improve given the complexity and black-box nature of RL algorithms, limiting our ability to interpret decisions and diagnose failures.
           <br/>
-          To address these challenges, researchers have increasingly incorporated external knowledge bases into RL frameworks. The knowledge bases can come from various sources such as external datasets (e.g., YouTube videos), guiding policies, knowledge graphs, natural language instructions, program synthesis, or systems for advanced sensing and control. External knowledge can improve sample efficiency by guiding agents' exploration while also enhancing safety by reducing potentially unsafe interactions with the environment. Lastly, RL agents may leverage these external resources during both learning and deployment to facilitate knowledge transfer across multiple environments and tasks.
+          To address these challenges, researchers have increasingly incorporated external knowledge bases into RL frameworks from sources such as external datasets (e.g. YouTube videos), guiding policies, knowledge graphs, natural language instructions, program synthesis, or advanced sensing and control systems. External knowledge can improve sample efficiency by guiding exploration, enhance safety by reducing potentially unsafe interactions with the environment, and facilitate knowledge transfer across multiple environments and tasks during both learning and deployment.
           <br/>
-          More recently, foundation models have proven to be powerful external knowledge for RL. These large pre-trained models offer broad reasoning capabilities and multimodal understanding, which RL agents can exploit in several ways. Foundation models can serve as priors for policy or value functions, guiding exploration and learning; as teachers and external reward generators, providing rich feedback and alignment; and as powerful representation learners, extracting generalizable features from complex, high-dimensional data. In embodied domains such as robotics, RL with foundation models is increasingly used to bridge perception, reasoning, and control. Conversely, RL has benefited from human feedback (RLHF) to align and refine the outputs of foundation models. Integrating knowledge on an unprecedented scale is driving advances in efficiency, safety, generalizability, transferrability, and interpretability of RL.
+          Foundation models have recently emerged as powerful external knowledge sources for RL, offering broad reasoning capabilities and multimodal understanding.
+          These models can serve as priors for policy or value functions, as teachers and external reward generators, and as generalizable representation learners.
+          They have also helped RL bridge perception, reasoning, and control in embodied domains such as robotics, while simultaneously benefiting from RL to align and refine their own outputs.
+          This large-scale knowledge integration is driving advances in all aspects of RL.
           <br/>
-          Despite recent breakthroughs, empowering RL with external knowledge bases in various forms -- from demonstrations to foundation models -- still presents significant challenges.
-These challenges include (1) effectively leveraging external knowledge for decision-making; (2) reliability and timeliness of available information -- potentially leading to biased or outdated decisions; or even (3) conflicts between internally learned experiences and external information. In addition, the computational resources required by RL can be further amplified when leveraging large-scale external knowledge sources. This computational burden may limit the scalability and practicality of RL solutions, particularly for organizations and individuals without access to extensive resources.
+          Despite recent breakthroughs, empowering RL with external knowledge bases -- from demonstrations to foundation models -- still presents significant challenges.
+          These include (1) effectively leveraging external knowledge for decision-making; (2) reliability and timeliness of available information -- potentially leading to biased or outdated decisions; or even (3) conflicts between internally learned experiences and external information.
+          In addition, computational requirements are amplified when leveraging large-scale external knowledge sources, potentially limiting the scalability and practicality of RL solutions, particularly for organizations and individuals without access to extensive resources.
         </p>
 
       </div>
@@ -39,18 +46,25 @@ These challenges include (1) effectively leveraging external knowledge for decis
       <div className="call-for-papers" id="call-for-papers">
         <h2>Call for Papers</h2>
         <p>
-          This workshop explores various techniques for leveraging external knowledge to improve RL in different domains and identifies the common principles and limitations of these methods. These techniques range from redesigning the fundamental problem formulation and algorithms of RL such that external information can be seamlessly used to update policies; finding knowledge representations that RL agents can easily incorporate; and coupling the designs of RL algorithms and knowledge representations to suit different real-world applications better. The recent resurgence of RL based on these techniques, driven by advances in large datasets and foundation models, has reignited enthusiasm and optimism in this field. This creates a unique opportunity to bring together researchers from diverse backgrounds seeking to harness external knowledge for more efficient, safe, generalizable, transferrable, and interpretable RL. A conversation among researchers from different perspectives, but with shared foundational goals, will help further advance the reliability and computational efficiency of RL with large external knowledge bases.
+          This workshop explores techniques that improve RL across domains by leveraging external knowledge, and identifies common principles and limitations.
+          The recent resurgence of RL, largely driven by advances in datasets and foundation models, has reignited enthusiasm and optimism in this field, creating a unique opportunity to bring together researchers from diverse backgrounds seeking to harness external knowledge for more efficient, reliable, and scalable RL.
+          Conversations among researchers with different perspectives, but shared foundational goals, will help advance the reliability and computational efficiency of RL with external knowledge.
           <br/>
           Relevant topics include, but are not limited to:
           <ul>
-            <li><b>Algorithm design for RL with external knowledge: </b>
-              Novel RL algorithms that effectively integrate external knowledge sources to enhance efficiency, safety, generalizability, transferability, and interpretability. Example topics include RL with foundation models, offline RL, program-guided RL, knowledge-grounded RL, reincarnating RL, safe RL, and explainable RL.</li>
+
+            <li><b>Algorithms for RL with external knowledge: </b>
+    RL algorithms that integrate external knowledge sources to enhance efficiency, safety, generalizability, transferability, and interpretability. Example topics include RL with foundation models, offline RL, program-guided RL, knowledge-grounded RL, reincarnating RL, safe RL, and explainable RL.</li>
+
             <li><b>Knowledge transfer in RL: </b>
               Methods for transferring learned skills and knowledge representations across different tasks, environments, and domains to reduce learning time in new RL scenarios. Example topics include meta-RL, multi-task RL, lifelong and continual RL, incremental RL, and hierarchical RL.</li>
-            <li><b>RL for foundation models: </b>
-              RL techniques for training, fine-tuning, and aligning foundation models to improve their reasoning abilities, reduce harmful outputs, and enhance their alignment with human preferences and values.</li>
+
+            <li><b>Knowledge-guided RL for foundation models: </b>
+              RL techniques for leveraging external knowledge to train, fine-tune, or align foundation models. Example topics include improving reasoning abilities, reducing harmful outputs, and enhancing their alignment with human preferences and values.</li>
+
             <li><b>Applications of RL with external knowledge: </b>
-              Real-world applications demonstrating how external knowledge integration enhances RL performance across domains such as robotics, autonomous systems, healthcare, and finance.</li>
+              Real-world applications demonstrating how external knowledge integration enhances RL performance across various domains, such as robotics, natural science, and healthcare.</li>
+
           </ul>
         </p>
       </div>
